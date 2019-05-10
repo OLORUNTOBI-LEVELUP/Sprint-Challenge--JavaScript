@@ -29,14 +29,39 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+## Answer
+ The forEach() method doesn’t actually return anything (undefined). It simply calls a provided function on each element in your array. This callback is allowed to mutate the calling array.
+
+Meanwhile, the map() method will also call a provided function on every element in the array. The difference is that map() utilizes return values and actually returns a new Array of the same size.
 
 2. What is the difference between a function and a method?
+## Answer
+A function is a subprogram designed to perform a particular task while a method is a function within an object
 
-3. What is closure?
+3. What is closure?\
+## Answer
+ A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function's variables — a scope chain. ... it has access to its own scope — variables defined between its curly brackets. it has access to the outer function's variables. it has access to the global variables
 
-4. Describe the four rules of the 'this' keyword.
+4. Describe the four rules of the 'this' keyword.\
+ ## Answer
+
+ 1. Default binding
+    window binding refers to just console logging the this        keyword. the this keyword alone refers to the window object   since its not being attached to anything
+
+ 2. Implicit binding
+    In this case, The object that is standing before the dot is   what this keyword will be bound to.
+
+ 3. New binding
+    So this when the function has been called with new refers to  the new instance created.
+    When a function is called with new, it does not care about implicit, explicit, or hard binding, it just creates the new context—which is the new instance.
+ 
+ 4. Explicit binding
+    Explicit binding is when we explicitly bind a context to the  function. This is done with call() or apply()
+ 
 
 5. Why do we need super() in an extended class?
+## Answer
+We need it in order to call/inherit the methods of the parent class
 
 ## Project Set up
 
